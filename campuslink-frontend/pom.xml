@@ -1,0 +1,29 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.manipal</groupId>
+  <artifactId>campuslink-frontend</artifactId>
+  <version>1.0.0</version>
+
+  <dependencies>
+    <dependency>
+      <groupId>react</groupId>
+      <artifactId>react</artifactId>
+      <version>18.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>react-dom</groupId>
+      <artifactId>react-dom</artifactId>
+      <version>18.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>axios</groupId>
+      <artifactId>axios</artifactId>
+      <version>1.6.7</version>
+    </dependency>
+    <dependency>
+      <groupId>react-icons</groupId>
+      <artifactId>react-icons</artifactId>
+      <version>4.12.0</version>
+    </dependency>
+  </dependencies>
+</project>
