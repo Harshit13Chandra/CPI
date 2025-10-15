@@ -42,3 +42,39 @@ body {
   position: absolute;
   z-index: 10;
 }
+.search-bar {
+  position: relative;
+  width: 250px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.search-results li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background-color: #f2f2f2;
+}
+

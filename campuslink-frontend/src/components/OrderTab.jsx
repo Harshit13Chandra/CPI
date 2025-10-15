@@ -12,12 +12,12 @@ export default function OrderTab({ user }) {
   useEffect(() => {
     axios.get('http://localhost:8080/api/restaurants')
       .then(res => setRestaurants(res.data))
-      .catch(() => {})
+      .catch(() => { })
   }, [])
 
-  const handleGrocerySelect = (item) => {
-    setGroceryList([...groceryList, item])
-  }
+  const handleGrocerySelect = (itemName) => {
+    setGroceryList((prev) => [...prev, itemName]);
+  };
 
   const handleSubmitGrocery = () => {
     axios.post('http://localhost:8080/api/grocery/order', { items: groceryList, userId: user.registrationId })

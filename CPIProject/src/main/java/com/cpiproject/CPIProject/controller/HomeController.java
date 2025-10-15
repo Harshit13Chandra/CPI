@@ -68,6 +68,21 @@ public class HomeController {
         return groceryService.findGroceries();
     }
 
+//    @PostMapping("/grocery/order")
+//    public ResponseEntity<Map<String, String>> groceryOrder(@RequestBody Map<String, Object> payload) {
+//        String ordererId = (String) payload.get("ordererId");
+//        List<String> items = (List<String>) payload.get("items");
+//
+//        Order order = new Order();
+//        order.setOrderType("GROCERY");
+//        order.setOrdererId(ordererId);
+//        order.setItems(String.join(",", items));
+//        orderRepo.save(order);
+//
+//        return ResponseEntity.ok(Map.of("status", "success", "message", "Grocery order submitted successfully"));
+//    }
+
+
 
 
 }
